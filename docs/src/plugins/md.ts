@@ -2,7 +2,7 @@ import { resolve } from 'node:path'
 import { readFileSync } from 'node:fs'
 import MarkdownIt from 'markdown-it'
 import mdContainer from 'markdown-it-container'
-import { VueTypeResolver } from '@white-block/types'
+// import { VueTypeResolver } from '@white-block/types'
 
 export default (md: MarkdownIt) => {
   md.use(mdContainer, 'demo', {

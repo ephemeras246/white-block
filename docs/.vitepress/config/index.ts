@@ -26,9 +26,9 @@ export default defineConfig({
   themeConfig: siteConfig,
   vite: {
     configFile: 'vite.config.ts'
-  },
-  markdown: {
-    config: md => mdPlugin(md)
   }
+  // markdown: {
+  //   config: md => mdPlugin(md)
+  // }
   // transformPageData
 })
