@@ -22,6 +22,7 @@ yarn.lock
 !.vscode/settings.json
 packages/**/*.vscode
 docs/.vitepress/cache/
+!docs/dist/
 packages/playground/site/
 .idea
 .DS_Store

@@ -1,0 +1,1 @@
+import{_ as t,M as o,a as c,b as n,C as s,B as a,H as _}from"./framework.2729cd3b.js";const r={},d={w:"70"};function l(b,f){const e=o("wb-button");return c(),n("div",d,[s(e,{block:""},{default:a(()=>[_("占满宽度")]),_:1})])}const m=t(r,[["render",l]]);export{m as default};

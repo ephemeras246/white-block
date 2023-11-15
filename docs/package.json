@@ -33,7 +33,7 @@
     "unocss": "^0.55.0",
     "unplugin-auto-import": "^0.16.7",
     "unplugin-vue-components": "^0.25.2",
-    "vitepress": "1.0.0-rc.10"
+    "vitepress": "1.0.0-rc.25"
   },
   "dependencies": {
     "shiki": "^0.14.2",
