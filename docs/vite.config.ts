@@ -15,10 +15,6 @@ export default defineConfig({
       {
         find: '@/',
         replacement: `${resolve(__dirname, 'src')}/`
-      },
-      {
-        find: '@white-block/types',
-        replacement: '@white-block/types/dist/index.js'
       }
     ]
   },
