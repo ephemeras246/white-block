@@ -21,4 +21,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACTIONS_TOKEN }}
         with:
           target_branch: gh-pages
-          build_dir: docs/.vitepress/dist
+          build_dir: docs/dist
