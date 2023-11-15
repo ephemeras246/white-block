@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 import mdPlugin from '../../src/plugins/md'
-// import { transformPageData } from './build'
 import siteConfig from './site'
 
 const ogUrl = 'https://kythuen.github.io/white-block/'
