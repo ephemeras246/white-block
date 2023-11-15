@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+/* 背景颜色 */
+/* rgba(26,25,43) */
+:root {
+  /* size: origin value */
+  --wb-size-comp-s: 28px;
+  --wb-size-comp-m: 34px;
+  --wb-size-comp-l: 40px;
+  --wb-size-padding-h-s: 8px;
+  --wb-size-padding-h-m: 12px;
+  --wb-size-padding-h-l: 16px;
+
+  /* palette: origin value */
+  --wb-color-gray-1: #f3f3f3;
+  --wb-color-gray-2: #eee;
+  --wb-color-gray-3: #e7e7e7;
+  --wb-color-gray-4: #dcdcdc;
+  --wb-color-gray-5: #c5c5c5;
+  --wb-color-gray-6: #a6a6a6;
+  --wb-color-gray-7: #8b8b8b;
+  --wb-color-gray-8: #777;
+  --wb-color-gray-9: #5e5e5e;
+  --wb-color-gray-10: #4b4b4b;
+  --wb-color-gray-11: #383838;
+  --wb-color-gray-12: #2c2c2c;
+  --wb-color-gray-13: #242424;
+  --wb-color-gray-14: #181818;
+  --wb-color-brand-1: #f2f3ff;
+  --wb-color-brand-2: #d9e1ff;
+  --wb-color-brand-3: #b5c7ff;
+  --wb-color-brand-4: #8eabff;
+  --wb-color-brand-5: #618dff;
+  --wb-color-brand-6: #366ef4;
+  --wb-color-brand-7: #0052d9;
+  --wb-color-brand-8: #003cab;
+  --wb-color-brand-9: #002a7c;
+  --wb-color-brand-10: #001a57;
+  --wb-color-status-error: #d54941;
+  --wb-color-status-success: #2ba471;
+  --wb-color-status-warning: #e37318;
+
+  /* text dark */
+  --wb-color-text-white-1: rgba(255, 255, 255, 1);
+  --wb-color-text-white-2: rgba(255, 255, 255, 0.55);
+  --wb-color-text-white-3: rgba(255, 255, 255, 0.35);
+  --wb-color-text-white-4: rgba(255, 255, 255, 0.22);
+  /* text light */
+  --wb-color-text-gray-1: rgba(0, 0, 0, 0.9);
+  --wb-color-text-gray-2: rgba(0, 0, 0, 0.6);
+  --wb-color-text-gray-3: rgba(0, 0, 0, 0.4);
+  --wb-color-text-gray-4: rgba(0, 0, 0, 0.26);
+
+  /* business: reference */
+  --wb-brand-color: var(--wb-color-brand-7);
+  --wb-brand-color-light: var(--wb-color-brand-1);
+  --wb-brand-color-anti: #fff;
+
+  --wb-brand-color-hover: var(--wb-color-brand-6);
+  --wb-brand-color-focus: var(--wb-color-brand-2);
+  --wb-brand-color-actived: var(--wb-color-brand-8);
+  --wb-brand-color-disabled: var(--wb-color-brand-5);
+
+  --wb-text-color-brand: var(--wb-brand-color);
+  --wb-text-color-link: var(--wb-brand-color);
+  /* light */
+  --wb-text-color-primary: var(--wb-color-text-gray-1);
+  --wb-text-color-secondary: var(--wb-color-text-gray-2);
+  --wb-text-color-placeholder: var(--wb-color-text-gray-3);
+  --wb-text-color-disabled: var(--wb-color-text-gray-4);
+  /* dark */
+  /* --wb-text-color-primary: var(--wb-color-text-white-1); */
+  /* --wb-text-color-secondary: var(--wb-color-text-white-2); */
+  /* --wb-text-color-placeholder: var(--wb-color-text-white-3); */
+  /* --wb-text-color-disabled: var(--wb-color-text-white-4); */
+
+  --wb-comp-bg-color: var(--wb-color-gray-3);
+  --wb-comp-bg-color-hover: var(--wb-color-gray-4);
+  --wb-comp-bg-color-actived: var(--wb-color-gray-5);
+  --wb-comp-padding-h-s: var(--wb-size-padding-h-s);
+  --wb-comp-padding-h-m: var(--wb-size-padding-h-m);
+  --wb-comp-padding-h-l: var(--wb-size-padding-h-l);
+
+  --wb-radius-small: 2px;
+  --wb-radius-default: 3px;
+
+  --wb-border-color-1: var(--wb-color-gray-3);
+  --wb-border-color-2: var(--wb-color-gray-4);
+}
+
+[un-cloak] {
+  display: none;
+}

@@ -1,0 +1,20 @@
+export type PopupPlacement =
+  | 'top'
+  | 'left'
+  | 'right'
+  | 'bottom'
+  | 'top-left'
+  | 'top-right'
+  | 'bottom-left'
+  | 'bottom-right'
+  | 'left-top'
+  | 'left-bottom'
+  | 'right-top'
+  | 'right-bottom'
+
+export type PopupTrigger =
+  | 'hover'
+  | 'click'
+  | 'focus'
+  | 'mousedown'
+  | 'context-menu'

@@ -1,0 +1,83 @@
+:root {
+  --wb-w-content: 920px;
+  --wb-w-sidebar: var(--vp-sidebar-width);
+  --wb-h-nav: var(--vp-nav-height);
+  --wb-c-brand: var(--vp-c-brand-1); // sky-400
+  --wb-c-brand-2: var(--vp-c-brand-2); // sky-600
+  --wb-c-brand-3: var(--vp-c-brand-3); // sky-800
+  --wb-c-brand-light: var(vp-c-brand-light); // sky-400/10
+  --wb-c-brand-hover: #7dd3fc; // sky-300
+  --wb-c-bg: #ffffff; // white
+  --wb-c-bg-layer: #ffffffcc; // white/80
+  --wb-c-bg-card: #f3f4f6; // gray-100
+  --wb-c-text-main: #0f172a; // slate-900
+  --wb-c-text-secondly: #475569; // slate-600
+  --wb-c-text-anti: #000000; // black
+  --wb-c-border: #0f172a1a; // slate-900/10
+  --wb-c-border-active: #64748b4d; // slate-500/30
+  --wb-c-border-code: var(--wb-c-border); // slate-900/10
+  --wb-c-scrollbar-thumb: #e5e7eb; // gray-200
+  --wb-c-bg-demo-content: #ffffff; // white
+  --wb-c-bg-demo-code: #f6f6f7;
+  --wb-c-bg-copy-code-hover: #f3f4f6; // gray-100
+}
+.dark:root {
+  --wb-c-bg: #0f172a; // slate-900
+  --wb-c-bg-layer: #0f172acc; // slate-900/80
+  --wb-c-bg-card: #33415580; // slate-700/50
+  --wb-c-text-main: #ffffff; // white
+  --wb-c-text-secondly: #94a3b8; // slate-400
+  --wb-c-text-anti: #ffffff; // white
+  --wb-c-border: #f8fafc1a; // slate-500/10
+  --wb-c-border-active: #64748b4d; // slate-500/30
+  --wb-c-border-code: #334053;
+  --wb-c-scrollbar-thumb: #f8fafc1a; // slate-50/10
+  --wb-c-bg-demo-content: #020617; // slate-950
+  --wb-c-bg-demo-code: #1e293b; // slate-800
+  --wb-c-bg-copy-code-hover: var(--vp-code-copy-code-hover-bg); // gray-100
+}
+
+// -------------------------------------- Scrollbar -------------------------------------
+.scrollable-main {
+  &::-webkit-scrollbar {
+    background: transparent;
+    height: 16px;
+    width: 16px;
+  }
+  &::-webkit-scrollbar-corner {
+    width: 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    background-color: var(--wb-c-scrollbar-thumb);
+    border: 4px solid transparent;
+    border-radius: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+.scrollable {
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+  }
+  &::-webkit-scrollbar-corner {
+    width: 0;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+    background-color: var(--wb-c-scrollbar-thumb);
+  }
+}
+
+// -------------------------------------- Content -------------------------------------
+.doc-demo h2 {
+  &:first-child {
+    margin-top: 16px;
+    border-top: none;
+  }
+}

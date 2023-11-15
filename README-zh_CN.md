@@ -1,11 +1,11 @@
 <p align="center">
   <br>
   <a href="https://github.com/Kythuen/white-block">
-    <img src="https://raw.githubusercontent.com/Kythuen/white-block/main/docs/content/public/logo.png" alt="Make more user friendly components for Vue" height="80">
+    <img src="https://raw.githubusercontent.com/Kythuen/white-block/main/docs/content/public/logo.png" alt="做可用性更好的 Vue 组件库" height="80">
   </a>
 </p>
 <h3 align="center">White Block</h3>
-<h4 align="center">Make more user friendly components for Vue</h4>
+<h4 align="center">做可用性更好的 Vue 组件库</h4>
 <br>
 
 <p align="center">
@@ -14,12 +14,6 @@
   </a>
   <a href="https://github.com/Kythuen/white-block/actions/workflows/release.yml" target="__blank">
     <img src="https://img.shields.io/github/actions/workflow/status/Kythuen/white-block/deploy.yml" alt="GitHub actions">
-  </a>
-  <a href="https://github.com/Kythuen/white-block/issues" target="__blank">
-   <img  alt="GitHub issues" src="https://img.shields.io/github/issues/Kythuen/white-block">
-  </a>
-  <a href="https://github.com/Kythuen/white-block/discussions" target="__blank">
-   <img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/Kythuen/white-block">
   </a>
 </p>
 <p align="center">
@@ -36,14 +30,13 @@
 
 <br>
 
-English | [简体中文](./README-zh_CN.md)
+简体中文 | [English](./README.md)
 
-## Packages
+## 功能
 
-- [@ephemeras/linter](https://kythuen.github.io/ephemeras/linter/) - Command line tool, quickly configuring and completing project code standardization construction.
+- [@ephemeras/linter](https://kythuen.github.io/ephemeras/linter/) - 方便的代码质量控制工具，快速配置完成项目的代码规范化搭建。
+- [@ephemeras/utils](https://kythuen.github.io/ephemeras/utils/) - 工具集，提供各种前端构建中常用的功能，高效开发、质量可靠。
 
-- [@ephemeras/utils](https://kythuen.github.io/ephemeras/utils/) - Tool collections provide useful features for front-end building, efficient and reliable.
+## 文档
 
-## Documents
-
-Read the [documentation](https://kythuen.github.io/white-block) for more details.
+更多用法可查看 [在线文档](https://kythuen.github.io/white-block) 。

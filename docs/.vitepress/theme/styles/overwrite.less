@@ -1,0 +1,77 @@
+:root {
+  --vp-c-brand-light: #2563eb1a; // blue-600/10
+  --vp-c-brand-1: #2563eb; // blue-600
+  --vp-c-brand-2: #1e40af; // blue-800
+  --vp-c-brand-3: #1e3a8a; // blue-900
+  --vp-nav-bg-color: transparent;
+  --vp-c-gutter: transparent;
+  --vp-sidebar-width: 260px;
+}
+
+.dark:root {
+  --vp-c-brand-light: #38bdf81a; // sky-400/10
+  --vp-c-brand-1: #38bdf8; // sky-400
+  --vp-c-brand-2: #0284c7; // sky-600
+  --vp-c-brand-3: #075985; // sky-800
+  --vp-code-block-bg: rgb(30, 41, 59); // slate-800 #1e293b
+  --vp-code-copy-code-bg: rgb(30, 41, 59);
+  --vp-code-copy-code-hover-bg: rgba(148, 163, 184, 0.1);
+  --vp-code-copy-code-border-color: rgba(148, 163, 184, 0.1);
+  --vp-code-copy-code-hover-border-color: rgba(148, 163, 184, 0.4);
+}
+
+// -------------------------------------- Nav -------------------------------------
+.VPNavBar {
+  .VPNavBarTitle a.title {
+    border-bottom: none;
+  }
+  div.title {
+    width: var(--vp-sidebar-width);
+    padding: 0 12px;
+  }
+  .curtain {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .VPNav {
+    position: relative !important;
+    .VPNavBar {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+// -------------------------------------- Source Code -------------------------------------
+.shiki {
+  background-color: transparent !important;
+}
+.shiki.vp-code-light {
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.dark {
+  .shiki.vp-code-dark {
+    border: 1px solid var(--wb-c-border-code);
+  }
+}
+.vp-doc [class*='language-'] > span.lang {
+  top: 16px;
+  right: 24px;
+}
+.vp-doc div[class*='language-'],
+.vp-block {
+  border-radius: 4px;
+}
+
+// -------------------------------------- Doc Aside -------------------------------------
+.vp-doc .wb-doc-aside a {
+  color: var(--wb-c-text-secondly);
+  text-decoration: none;
+  &:hover {
+    color: var(--wb-c-text-main);
+  }
+}
+.vp-doc .wb-doc-aside .active a {
+  color: var(--wb-c-brand);
+}

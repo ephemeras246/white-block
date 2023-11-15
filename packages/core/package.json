@@ -1,0 +1,45 @@
+{
+  "name": "white-block",
+  "version": "1.2.0",
+  "description": "More user friendly components for Vue",
+  "author": {
+    "name": "ephemeras",
+    "email": "ephemeras@qq.com"
+  },
+  "license": "MIT",
+  "main": "dist/lib/index.js",
+  "module": "dist/esm/index.mjs",
+  "typings": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/lib/index.cjs",
+      "import": "./dist/esm/index.mjs"
+    },
+    "./dist/*": "./dist/*"
+  },
+  "scripts": {
+    "dev": "run-p build:es dts",
+    "build": "esno scripts/build.ts & npm run dts",
+    "build:es": "vite build --watch",
+    "dts": "vue-tsc --declaration --emitDeclarationOnly --outDir dist/types"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.3.1",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "fast-glob": "^3.3.1",
+    "rollup": "^3.28.0",
+    "unocss": "^0.55.0",
+    "vue-tsc": "^1.8.8"
+  },
+  "peerDependencies": {
+    "vue": ">=3.3.0"
+  }
+}
