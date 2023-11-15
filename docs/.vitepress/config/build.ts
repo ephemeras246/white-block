@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import MarkdownIt from 'markdown-it'
-import { VueTypeResolver, generateMarkdownTable } from '@white-block/types/dist'
+import { VueTypeResolver, generateMarkdownTable } from '@white-block/types'
 import { propsHeader, emitsHeader } from './constant'
 
 const Md = MarkdownIt()
