@@ -29,7 +29,7 @@
                 transition="all duration-300 ease-in-out"
               >
                 <div w="40" h="40" m="b-2" rounded="1.5">
-                  <img :src="sub.image" />
+                  <img :src="withBase(sub.image)" />
                 </div>
                 <div>
                   {{ sub.text }}

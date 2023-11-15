@@ -81,13 +81,13 @@
       transform="hover:scale-110"
       transition="transform duration-300 ease-in-out"
     >
-      <img h="full" opacity-60 :src="data.decoration" />
+      <img h="full" opacity-60 :src="withBase(data.decoration)" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useData } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 import type { PropType } from 'vue'
 
 export interface DCHeaderData {
