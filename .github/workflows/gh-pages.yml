@@ -1,3 +1,6 @@
+env:
+  DISABLE_CACHE: true
+
 name: docs-deploy
 
 on:
