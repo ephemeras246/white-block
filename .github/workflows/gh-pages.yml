@@ -15,6 +15,23 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
+      - name: Install PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.x
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build vitepress site
+        run: pnpm docs:build
+
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         env:
