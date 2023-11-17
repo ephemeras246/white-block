@@ -1,6 +1,6 @@
 {
   "name": "white-block",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "More user friendly components for Vue",
   "author": {
     "name": "ephemeras",
@@ -8,11 +8,19 @@
   },
   "license": "MIT",
   "main": "dist/lib/index.js",
-  "module": "dist/es/index.js",
+  "module": "dist/esm/index.mjs",
   "types": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/lib/index.js",
+      "import": "./dist/esm/index.mjs"
+    },
+    "./dist/*": "./dist/*"
+  },
   "scripts": {
     "dev": "run-p build:es dts",
     "build": "esno scripts/build.ts & npm run dts",

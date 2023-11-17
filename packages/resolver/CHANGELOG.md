@@ -1,5 +1,11 @@
 # @white-block/resolver
 
+## 1.5.0
+
+### Minor Changes
+
+- 更新版本
+
 ## 1.4.0
 
 ### Minor Changes

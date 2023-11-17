@@ -14,8 +14,5 @@ declare module 'vue' {
     TSelect: typeof import('tdesign-vue-next')['Select']
     TSubmenu: typeof import('tdesign-vue-next')['Submenu']
     TSwitch: typeof import('tdesign-vue-next')['Switch']
-    WbButton: typeof import('white-block')['Button']
-    WbPopup: typeof import('white-block')['Popup']
-    WbSpace: typeof import('white-block')['Space']
   }
 }

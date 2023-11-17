@@ -1,6 +1,6 @@
 {
   "name": "@white-block/types",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "A tool to resolve Props & Emits type for Vue3",
   "keywords": [
     "ephemeras",
@@ -15,8 +15,7 @@
   },
   "license": "MIT",
   "type": "module",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {

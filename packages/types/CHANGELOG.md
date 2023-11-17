@@ -1,5 +1,11 @@
 # @white-block/types
 
+## 1.8.0
+
+### Minor Changes
+
+- 更新版本
+
 ## 1.7.0
 
 ### Minor Changes
