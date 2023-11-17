@@ -7,7 +7,12 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    TMenu: typeof import('tdesign-vue-next')['Menu']
+    TMenuItem: typeof import('tdesign-vue-next')['MenuItem']
+    TRadioButton: typeof import('tdesign-vue-next')['RadioButton']
+    TRadioGroup: typeof import('tdesign-vue-next')['RadioGroup']
     TSelect: typeof import('tdesign-vue-next')['Select']
+    TSubmenu: typeof import('tdesign-vue-next')['Submenu']
     TSwitch: typeof import('tdesign-vue-next')['Switch']
     WbButton: typeof import('white-block')['Button']
     WbPopup: typeof import('white-block')['Popup']

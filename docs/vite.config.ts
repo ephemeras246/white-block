@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 import UnoCSS from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import { TDesignResolver } from 'unplugin-vue-components/resolvers'
+// import { TDesignResolver } from 'unplugin-vue-components/resolvers'
 // import { resolver as WhiteBlockResolver } from '@white-block/resolver'
 
 export default defineConfig({
@@ -35,20 +35,20 @@ export default defineConfig({
               }
             }
           }
-        },
-        {
-          type: 'component',
-          // eslint-disable-next-line consistent-return
-          resolve: name => {
-            if (name.match(/^Wb[A-Z]/)) {
-              const importName = name.match(/^Wb[A-Z]/) ? name.slice(2) : name
-              return {
-                name: importName,
-                from: `white-block`
-              }
-            }
-          }
         }
+        // {
+        //   type: 'component',
+        //   // eslint-disable-next-line consistent-return
+        //   resolve: name => {
+        //     if (name.match(/^Wb[A-Z]/)) {
+        //       const importName = name.match(/^Wb[A-Z]/) ? name.slice(2) : name
+        //       return {
+        //         name: importName,
+        //         from: `white-block`
+        //       }
+        //     }
+        //   }
+        // }
         // WhiteBlockResolver()
       ]
     }),
@@ -65,20 +65,20 @@ export default defineConfig({
               }
             }
           }
-        },
-        {
-          type: 'component',
-          // eslint-disable-next-line consistent-return
-          resolve: name => {
-            if (name.match(/^Wb[A-Z]/)) {
-              const importName = name.match(/^Wb[A-Z]/) ? name.slice(2) : name
-              return {
-                name: importName,
-                from: `white-block`
-              }
-            }
-          }
         }
+        // {
+        //   type: 'component',
+        //   // eslint-disable-next-line consistent-return
+        //   resolve: name => {
+        //     if (name.match(/^Wb[A-Z]/)) {
+        //       const importName = name.match(/^Wb[A-Z]/) ? name.slice(2) : name
+        //       return {
+        //         name: importName,
+        //         from: `white-block`
+        //       }
+        //     }
+        //   }
+        // }
         // WhiteBlockResolver()
       ]
     })
