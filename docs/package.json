@@ -24,8 +24,8 @@
     "@iconify-json/simple-icons": "^1.1.77",
     "@iconify-json/tdesign": "^1.1.0",
     "@unocss/core": "^0.55.0",
-    "@white-block/resolver": "1.4.0",
-    "@white-block/types": "1.6.0",
+    "@white-block/resolver": "npm:@white-block/resolver@latest",
+    "@white-block/types": "npm:@white-block/types@latest",
     "less": "^4.2.0",
     "markdown-it": "^13.0.1",
     "markdown-it-container": "^3.0.0",
@@ -39,6 +39,6 @@
     "shiki": "^0.14.2",
     "tdesign-vue-next": "^1.6.8",
     "vue": "^3.3.4",
-    "white-block": "1.4.0"
+    "white-block": "npm:white-bloc@latest"
   }
 }
