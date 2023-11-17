@@ -23,6 +23,7 @@ yarn.lock
 packages/**/*.vscode
 docs/.vitepress/cache/
 packages/playground/site/
+docs/dist/
 .idea
 .DS_Store
 *.suo

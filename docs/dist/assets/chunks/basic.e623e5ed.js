@@ -1,1 +1,0 @@
-import{_ as e,M as o,a,A as c,B as n,H as r}from"./framework.2729cd3b.js";const s={};function _(p,f){const t=o("wb-button");return a(),c(t,{type:"primary"},{default:n(()=>[r("按钮")]),_:1})}const m=e(s,[["render",_]]);export{m as default};

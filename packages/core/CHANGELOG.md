@@ -1,5 +1,11 @@
 # white-block
 
+## 1.5.0
+
+### Minor Changes
+
+- 更新文档
+
 ## 1.4.0
 
 ### Minor Changes

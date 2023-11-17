@@ -4,7 +4,7 @@ import UnoCSS from 'unocss/vite'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { TDesignResolver } from 'unplugin-vue-components/resolvers'
-import { resolver as WhiteBlockResolver } from '@white-block/resolver'
+// import { resolver as WhiteBlockResolver } from '@white-block/resolver'
 
 export default defineConfig({
   ssr: {
@@ -24,17 +24,61 @@ export default defineConfig({
       dirs: ['src/components'],
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       resolvers: [
-        TDesignResolver({
-          library: 'vue-next'
-        })
+        {
+          type: 'component',
+          resolve: name => {
+            if (name.match(/^T[A-Z]/)) {
+              const importName = name.match(/^T[A-Z]/) ? name.slice(1) : name
+              return {
+                name: importName,
+                from: `tdesign-vue-next`
+              }
+            }
+          }
+        },
+        {
+          type: 'component',
+          // eslint-disable-next-line consistent-return
+          resolve: name => {
+            if (name.match(/^Wb[A-Z]/)) {
+              const importName = name.match(/^Wb[A-Z]/) ? name.slice(2) : name
+              return {
+                name: importName,
+                from: `white-block`
+              }
+            }
+          }
+        }
         // WhiteBlockResolver()
       ]
     }),
     AutoImport({
       resolvers: [
-        TDesignResolver({
-          library: 'vue-next'
-        })
+        {
+          type: 'component',
+          resolve: name => {
+            if (name.match(/^T[A-Z]/)) {
+              const importName = name.match(/^T[A-Z]/) ? name.slice(1) : name
+              return {
+                name: importName,
+                from: `tdesign-vue-next`
+              }
+            }
+          }
+        },
+        {
+          type: 'component',
+          // eslint-disable-next-line consistent-return
+          resolve: name => {
+            if (name.match(/^Wb[A-Z]/)) {
+              const importName = name.match(/^Wb[A-Z]/) ? name.slice(2) : name
+              return {
+                name: importName,
+                from: `white-block`
+              }
+            }
+          }
+        }
         // WhiteBlockResolver()
       ]
     })

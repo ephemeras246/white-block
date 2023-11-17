@@ -10,7 +10,7 @@ export function resolver(): ComponentResolver {
 
         return {
           name: importName,
-          from: `white-block/dist/esm`
+          from: `white-block`
         }
       }
     }
