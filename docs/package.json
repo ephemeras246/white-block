@@ -39,6 +39,6 @@
     "shiki": "^0.14.2",
     "tdesign-vue-next": "^1.6.8",
     "vue": "^3.3.4",
-    "white-block": "npm:white-bloc@latest"
+    "white-block": "npm:white-block@latest"
   }
 }
