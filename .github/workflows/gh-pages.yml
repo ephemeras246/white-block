@@ -30,7 +30,7 @@ jobs:
         run: pnpm install
 
       - name: Build vitepress site
-        run: cd docs && pnpm docs:build
+        run: cd docs && pnpm build
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
